@@ -122,7 +122,6 @@ $form-group-margin-bottom:       30px;
 		padding: 70px 0 470px;
 		padding-right: 20px;
 		padding-left:20px;
-		font-size: 18px;
 	}	
 }
 .headsobre {
@@ -131,9 +130,17 @@ $form-group-margin-bottom:       30px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 120px;
+  padding-top: 140px;
   padding-left: 40px;
   padding-right: 40px;
+  @media screen and (max-width: $screen-sm) {
+  		height: 50vh;
+		padding-top:180px;
+	}	
+  @media screen and (max-width: 812px) {
+  		height: 75vh;
+		padding-top:140px;
+	}
 }
 
 .headcontato {
@@ -142,9 +149,16 @@ $form-group-margin-bottom:       30px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 120px;
+  padding-top: 140px;
   padding-left: 40px;
   padding-right: 40px;
+  @media screen and (max-width: $screen-sm) {
+		padding-top:180px;
+	}
+  @media screen and (max-width: 812px) {
+  		height: 75vh;
+		padding-top:140px;
+	}
 }
 
 body {
@@ -202,7 +216,31 @@ h6 {
 	color: $brand-black;
 	font-family: $font-primary;
 	font-weight: 900;
+	font-size: 40px !important;
 	margin: 0 0 20px 0;
+	@media screen and (max-width: $screen-sm) {
+		font-size: 30px !important;
+		text-align: center;
+	}	
+	@media screen and (max-width: 812px) {
+		font-size: 30px !important;
+		text-align: center;
+	}
+}
+
+h7 {
+	color: #d1c8fd;
+	font-family: $font-primary;
+	font-weight: 400;
+	font-size: 15px !important;
+	@media screen and (max-width: $screen-sm) {
+		font-size: 15px !important;
+		text-align: center !important;
+	}
+	@media screen and (max-width: 812px) {
+		font-size: 10px !important;
+		text-align: center;
+	}
 }
 
 
